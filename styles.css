@@ -32,19 +32,23 @@
   height: 390px;
   border-top:10px solid#2A2F4F;
   border-bottom:10px solid #2A2F4F;
+  
 
 }
 
 .up
 {
+   position: relative;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto;
-  justify-content: space-evenly;
+  bottom: 0%;
+  grid-template-columns:153px 153px 153px 153px 153px 153px 153px 153px;
+  margin-left: 54px;
+  
 }
 
 .gamebox .up .box
 {
-  width: 100px;
+  width: 70px;
   height: 300px;
   background-color: #2A2F4F;
 }
@@ -55,12 +59,13 @@
   display: grid;
   bottom: 0%;
   grid-template-columns:153px 153px 153px 153px 153px 153px 153px;
-  margin-left: 170px;
+  margin-left: 10.5%;
+  
 }
 
 .down .box
 {
-  width: 20px;
+  width: 62px;
   height: 340px;
   background-color:#E5BEEC;
   margin-right: 5px;
@@ -89,3 +94,15 @@
   font-size: 1em;
 }
 
+
+#dont, #dont1, #dont2, #dont3, #dont4, #dont5, #dont6, #dont7
+{
+  z-index: 10;
+}
+
+
+body
+{
+ cursor:cell;
+  
+}
