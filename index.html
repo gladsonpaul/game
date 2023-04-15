@@ -11,30 +11,46 @@
     />
 
     <title>DONT TOUCH ME</title>
+    <script src="jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#dont").mouseenter(function () {
+          alert("FAIL!!!");
+        });
+
+        
+        $("#ddont").mouseenter(function () {
+          alert("FAIL!!!");
+        });
+      });
+    </script>
   </head>
   <body>
+    <div class="banner">
+      <div class="ban2"><h2>DONT LET THE MOUSE TOUCH THE BAR!</h2></div>
+    </div>
     <div class="container">
       <h1>Careful!</h1>
       <div class="gamebox">
         <div class="up">
-         <div class="box"></div>
-         <div class="box"></div>
-         <div class="box"></div> 
-         <div class="box"></div> 
-         <div class="box"></div> 
-         <div class="box"></div> 
-         <div class="box"></div> 
-         <div class="box"></div> 
+          <div class="box" id="dont"></div>
+          <div class="box" id="dont"></div>
+          <div class="box" id="dont"></div>
+          <div class="box" id="dont"></div>
+          <div class="box" id="dont"></div>
+          <div class="box" id="dont"></div>
+          <div class="box" id="dont"></div>
+          <div class="box" id="dont"></div>
         </div>
         <div class="down">
-          
-          <div class="box" ></div>
-          <div class="box"  ></div>
-          <div class="box"  ></div>
-          <div class="box"  ></div>
-          <div class="box"  ></div>
-          <div class="box"  ></div>
-          <div class="box"  ></div>
+          <div class="box" id="ddont"></div>
+          <div class="box" id="ddont"></div>
+          <div class="box" id="ddont"></div>
+          <div class="box" id="ddont"></div>
+          <div class="box" id="ddont"></div>
+          <div class="box" id="ddont"></div>
+          <div class="box" id="ddont"></div>
         </div>
       </div>
     </div>
