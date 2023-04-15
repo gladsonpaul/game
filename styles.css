@@ -12,11 +12,57 @@
   width: 100%;
   height: 100%;
   background-color: #917FB3;
+  /* border: 2px solid red; */
 }
 
 
 .container h1
 {
   font-size: 7em;
-  text-align: center;  
+  text-align: center;
+  color: #2A2F4F; 
+  /* border: 1px solid yellow; */
+}
+
+.gamebox
+{
+  position: relative; 
+  margin: 0 auto;
+  width: 100%;
+  height: 390px;
+  border-top:10px solid#2A2F4F;
+  border-bottom:10px solid #2A2F4F;
+
+}
+
+.up
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  justify-content: space-evenly;
+}
+
+.gamebox .up .box
+{
+  width: 100px;
+  height: 300px;
+  background-color: #2A2F4F;
+}
+
+.down
+{
+  position: absolute;
+  display: grid;
+  bottom: 0%;
+  grid-template-columns:153px 153px 153px 153px 153px 153px 153px;
+  margin-left: 170px;
+}
+
+.down .box
+{
+  width: 20px;
+  height: 340px;
+  background-color: antiquewhite;
+  margin-right: 5px;
+  
 }
